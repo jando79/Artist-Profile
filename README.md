@@ -8,7 +8,8 @@
 * 8:00- repository set-up and read today's objectives
 * 8:30- wrote capstone-proposal.md
 * 10:10- watching <a href="https://www.youtube.com/watch?v=b9eMGE7QtTk&list=PLWJHBbgEE85zkXzrgQ9fcHdvw4rH4Cx_U&index=3">basic React instructional video</a> on youTube. Take notes, review, reference those particular parts in repository.
-
+* 1:00- research <a href="https://www.google.com/search?q=bootstrap+fonts&rlz=1C1UEAD_enUS1038US1038&oq=boot&aqs=chrome.1.69i59l3j69i57j0i67i650l2j0i67i131i433i650j0i67i650j0i67i131i433i650j0i67i650.3991j0j15&sourceid=chrome&ie=UTF-8">bootstrap fonts</a> and play with them. Trying to get graffiti font to work, but not. Moving on.
+* 2:20- watching <a href="https://youtu.be/YOAeBSCkArA">youTube video on Firebase</a> cloud storage. Taking notes.
 
 
 
