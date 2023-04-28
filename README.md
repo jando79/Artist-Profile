@@ -11,6 +11,7 @@
 * 1:00- research <a href="https://www.google.com/search?q=bootstrap+fonts&rlz=1C1UEAD_enUS1038US1038&oq=boot&aqs=chrome.1.69i59l3j69i57j0i67i650l2j0i67i131i433i650j0i67i650j0i67i131i433i650j0i67i650.3991j0j15&sourceid=chrome&ie=UTF-8">bootstrap fonts</a> and play with them. Trying to get graffiti font to work, but not. Moving on.
 * 2:20- watching <a href="https://youtu.be/YOAeBSCkArA">youTube video on Firebase</a> cloud storage. Taking notes.
 * 3:25 playing around with Firbase and reading <a href="https://www.learnhowtoprogram.com/react">NoSql (React Wk 4)</a> lessons on it.
+* working on boostrap nav-bar
 
 
 
