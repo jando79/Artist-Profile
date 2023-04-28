@@ -1,7 +1,7 @@
-## Capstone Proposal
+## <strong>Capstone Proposal</strong>
 
 ### Project Title:   
-## Artist Profile
+# <strong>Artist Profile</strong>
 
 #### By:  David Jandron
 
@@ -18,10 +18,24 @@ This site will introduce viewers to my many works of art. There will also be an 
 
 ### Tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
-* _Firebase cloud storage (Will use tracks from <a href="https://www.learnhowtoprogram.com/react">learnhowtoprogram.com</a> React week4, and youTube instructional videos)
+* _<strong>React</strong> (Will use youTube tutorial videos, React tracks from <a href="https://www.learnhowtoprogram.com/react">learnhowtoprogram.com</a>, previous React projects in my repository as reference points)_
+* _<strong>Firebase</strong> cloud storage (Will use tracks from <a href="https://www.learnhowtoprogram.com/react">learnhowtoprogram.com</a> React week4, and youTube instructional videos)
+* _<strong>Bootstrap</strong> styling library (Will use youTube instructional videos, and <a href="https://getbootstrap.com/">bootstrap.com</a>)
+* _<strong>JavaScript</strong> as it purtains to React tracks at link listed above.
+* _<strong>Node.js</strong>
+* _<strong>webpack</strong>_
+* _<strong>Html</strong>
+* _<strong>CSS</strong>
 
-If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
+### Stretch Goals:
 
-What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
+* Backend using a <strong>C# Api</strong> that contains image and details of the associated image.
+* More complex <strong>Bootstrap</strong> stylings and animations
+* A store for purchasing artwork, using a <strong>Paypal Api</strong>
+
+### Additional tools, frameworks, libraries, and APIs, I will need for additional features?
+
+* <strong>C# Api</strong> (Will use C# building an Api lessons (C# week 6) on <a href="https://www.learnhowtoprogram.com/c-and-net">learnhowtoprogram.com</a>)
+* 
 
 Is there anything else you'd like your instructor to know?
