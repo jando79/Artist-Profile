@@ -1,4 +1,21 @@
-# Getting Started with Create React App
+# <strong>Artist Profile</strong>
+
+### By: David Jandron
+
+### Research & Planning Log
+#### Friday, 04/28
+
+* 8:00- repository set-up and read today's objectives
+* 8:30- wrote capstone-proposal.md
+* 10:10- watching <a href="https://www.youtube.com/watch?v=b9eMGE7QtTk&list=PLWJHBbgEE85zkXzrgQ9fcHdvw4rH4Cx_U&index=3">basic React instructional video</a> on youTube
+
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +84,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
