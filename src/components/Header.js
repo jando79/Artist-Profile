@@ -4,7 +4,7 @@ function Header () {
 
   return (
     <React.Fragment>
-      <h1 style={{ textAlign: "center", fontSize: "50px", fontFamily: "Impact" }}>DAVID JANDRON</h1>
+      <h1 style={{ textAlign: "center", fontSize: "50px", fontFamily: "Impact" }}>The DAVID JANDRON Gallery</h1>
     </React.Fragment>
   );
 }
