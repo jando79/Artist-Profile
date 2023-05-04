@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import ArtControl from "./ArtControl";
+import ArtControl from "./paintings/ArtControl";
 import SignIn from "./SignIn";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
