@@ -14,7 +14,7 @@ function Art(props){
   );
 }
 
-Ticket.propTypes = {
+Art.propTypes = {
   // image
   title: PropTypes.string,
   year: PropTypes.string,

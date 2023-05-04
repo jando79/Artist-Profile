@@ -14,7 +14,7 @@ function Collage(props){
   );
 }
 
-Ticket.propTypes = {
+Collage.propTypes = {
   // image
   title: PropTypes.string,
   year: PropTypes.string,

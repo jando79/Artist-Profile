@@ -25,6 +25,12 @@ function Header(){
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/paintings">Paintings</Link>
+          </li>
+          <li>
+            <Link to="/collages">Collage</Link>
+          </li>
+          <li>
             <Link to="/sign-in">Sign In</Link>
           </li>
       </ul>
