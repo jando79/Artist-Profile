@@ -1,35 +1,35 @@
 import React, { useState, useEffect } from 'react';
-import NewArtForm from './NewArtForm';
-import ArtList from './ArtList';
-import EditArtForm from './EditArtForm';
-import ArtDetail from './ArtDetail';
+import NewCollageForm from './NewCollageForm';
+import CollageList from './CollageList';
+import EditCollageForm from './EditCollageForm';
+import CollageDetail from './CollageDetail';
 import { collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc } from "firebase/firestore";
 import { db, auth } from '../../firebase.js';
 
-function ArtControl() {
+function CollageControl() {
 
   const [formVisibleOnPage, setFormVisibleOnPage] = useState(false);
-  const [mainArtList, setMainArtList] = useState([]);
-  const [selectedArt, setSelectedArt] = useState(null);
+  const [mainCollageList, setMainCollageList] = useState([]);
+  const [selectedCollage, setSelectedCollage] = useState(null);
   const [editing, setEditing] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => { 
     const unSubscribe = onSnapshot(
-      collection(db, "arts"), 
+      collection(db, "collages"), 
       (collectionSnapshot) => {
-        const arts = [];
+        const collages = [];
         collectionSnapshot.forEach((doc) => {
-            arts.push({
+            collages.push({
               title: doc.data().title, 
               year: doc.data().year, 
-              medium: doc.data().medium,
+              // medium: doc.data().medium,
               about: doc.data().about,
               price: doc.data().price, 
               id: doc.id
             });
         });
-        setMainArtList(arts);
+        setMainCollageList(collages);
       }, 
       (error) => {
         setError(error.message);
@@ -40,39 +40,39 @@ function ArtControl() {
   }, []);
   
   const handleClick = () => {
-    if (selectedArt != null) {
+    if (selectedCollage != null) {
       setFormVisibleOnPage(false);
-      setSelectedArt(null);
+      setSelectedCollage(null);
       setEditing(false);
     } else {
       setFormVisibleOnPage(!formVisibleOnPage);
     }
   }
 
-  const handleDeletingArt = async (id) => {
-    await deleteDoc(doc(db, "arts", id));
-    setSelectedArt(null);
+  const handleDeletingCollage = async (id) => {
+    await deleteDoc(doc(db, "collages", id));
+    setSelectedCollage(null);
   } 
 
   const handleEditClick = () => {
     setEditing(true);
   }
 
-  const handleEditingArtInList = async (artToEdit) => {
-    const artRef = doc(db, "arts", artToEdit.id);
-    await updateDoc(artRef, artToEdit);
+  const handleEditingCollageInList = async (collageToEdit) => {
+    const collageRef = doc(db, "collages", collageToEdit.id);
+    await updateDoc(collageRef, collageToEdit);
     setEditing(false);
-    setSelectedArt(null);
+    setSelectedCollage(null);
   }
 
-  const handleAddingNewArtToList = async (newArtData) => {
-    await addDoc(collection(db, "arts"), newArtData);
+  const handleAddingNewCollageToList = async (newCollageData) => {
+    await addDoc(collection(db, "collages"), newCollageData);
     setFormVisibleOnPage(false);
   }
 
-  const handleChangingSelectedArt = (id) => {
-    const selection = mainArtList.filter(art => art.id === id)[0];
-    setSelectedArt(selection);
+  const handleChangingSelectedCollage = (id) => {
+    const selection = mainCollageList.filter(collage => collage.id === id)[0];
+    setSelectedCollage(selection);
   }
 
   if (auth.currentUser == null) {
@@ -90,28 +90,28 @@ function ArtControl() {
       currentlyVisibleState = <p>There was an error: {error}</p>
     } else if (editing) {      
       currentlyVisibleState = 
-        <EditArtForm 
-          art = {selectedArt} 
-          onEditArt = {handleEditingArtInList} />;
+        <EditCollageForm 
+          collage = {selectedCollage} 
+          onEditCollage = {handleEditingCollageInList} />;
       buttonText = "Return to Listings";
-    } else if (selectedArt != null) {
+    } else if (selectedCollage != null) {
       currentlyVisibleState = 
-        <ArtDetail 
-          art={selectedArt} 
-          onClickingDelete={handleDeletingArt}
+        <CollageDetail 
+          collage={selectedCollage} 
+          onClickingDelete={handleDeletingCollage}
           onClickingEdit = {handleEditClick} />;
       buttonText = "Return to Listings";
     } else if (formVisibleOnPage) {
       currentlyVisibleState = 
-        <NewArtForm 
-          onNewArtCreation={handleAddingNewArtToList}/>;
+        <NewCollageForm 
+          onNewCollageCreation={handleAddingNewCollageToList}/>;
       buttonText = "Return to Listings"; 
     } else {
       currentlyVisibleState = 
-        <ArtList 
-          onArtSelection={handleChangingSelectedArt} 
-          artList={mainArtList} />;
-      buttonText = "Add Art"; 
+        <CollageList 
+          onCollageSelection={handleChangingSelectedCollage} 
+          collageList={mainCollageList} />;
+      buttonText = "Add Collage"; 
     }
 
     return (
@@ -123,4 +123,4 @@ function ArtControl() {
   }
 }
 
-export default ArtControl;
+export default CollageControl;

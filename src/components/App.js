@@ -10,7 +10,8 @@ function App(){
       <Header />
       <Routes>
         <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/" element={<ArtControl />} />
+        <Route path="/Paintings" element={<ArtControl />} />
+        <Route path="/Collage" element={<CollageControl />} />
       </Routes>
     </Router>
   );
