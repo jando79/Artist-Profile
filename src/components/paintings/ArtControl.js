@@ -5,6 +5,7 @@ import EditArtForm from './EditArtForm';
 import ArtDetail from './ArtDetail';
 import { collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc } from "firebase/firestore";
 import { db, auth } from '../../firebase.js';
+import { formatDistanceToNow } from 'date-fns';
 
 function ArtControl() {
 

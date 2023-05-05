@@ -22,8 +22,8 @@ function SignIn(){
 
   function doSignIn(event) {
     event.preventDefault();
-    const email = event.target.signInEmail.value;
-    const password = event.target.signInPassword.value;
+    const email = event.target.signinEmail.value;
+    const password = event.target.signinPassword.value;
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         setSignInSuccess(`You've successfully signed in as ${userCredential.user.email}!`)
@@ -61,11 +61,11 @@ function SignIn(){
       <form onSubmit={doSignIn}>
         <input
           type='text'
-          name='signInEmail'
+          name='signinEmail'
           placeholder='email' />
         <input
           type='password'
-          name='signInPassword'
+          name='signinPassword'
           placeholder='Password' />
         <button type='submit'>Sign in</button>
       </form>
@@ -77,4 +77,4 @@ function SignIn(){
   );
 }
 
-export default SignIn;
+export default SignIn

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types"; 
 import ReusableForm from "./ReusableForm";
+import { serverTimeStamp } from "firebase/firestore";
 
 function NewCollageForm(props){
 
@@ -11,7 +12,8 @@ function NewCollageForm(props){
       year: event.target.year.value, 
       // medium: event.target.medium.value,
       about: event.target.about.value,
-      price: event.target.price.value, 
+      price: event.target.price.value,
+      timeOpen: serverTimestamp() 
     });
   }
 
