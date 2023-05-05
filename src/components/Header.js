@@ -8,6 +8,8 @@ const ArtistProfileHeader = styled.h1`
   text-align: center;
   color: black;
   background-color: yellow;
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
 `;
 const StyledWrapper = styled.section`
   background-color: yellow;
@@ -20,7 +22,7 @@ function Header(){
         <ArtistProfileHeader>
           <h1>the DAVID JANDRON gallery</h1>
         </ArtistProfileHeader>
-        <ul>
+        {/* <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -36,7 +38,7 @@ function Header(){
           <li>
             <Link to="/sign-in">Sign In</Link>
           </li>
-      </ul>
+      </ul> */}
       </React.Fragment>
     </StyledWrapper>
   );

@@ -22,7 +22,7 @@ const Bar = styled.nav`
     height: 70px;
     align-items: center;
   }
-`
+`;
 const MainNav = styled.ul`
   list-style-type: none;
   display: ${ props => props.display };
@@ -33,19 +33,21 @@ const MainNav = styled.ul`
     flex-direction: row;
     justify-content: flex-end;
   }
-`
+`;
 const NavLi = styled.li`
   text-align: center;
   margin: 15px auto;
-` 
-const Li = styled.a`
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-family: blowbrush;
   @media (min-width: 768px) {    
   margin: 0px 10px;
   }
-`
+`;
 // const Logo  = NavLink.extend`
 //   display: inline-block;
 //   font-size: 22px;
