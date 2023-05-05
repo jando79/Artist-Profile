@@ -8,14 +8,14 @@ body {
 }
 
 @font-face {
-  font-family: 'sedgewickAve-regular';
-  src: url('./fonts/SedgwickAve-Regular.ttf') format('truetype');
+  font-family: 'blowbrush';
+  src: url('./fonts/Blowbrush.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 h1 {
-  font-family: 'sedgwickave-regular';
+  font-family: 'blowbrush';
 }
 
 code {
