@@ -1,21 +1,21 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: 'sedwickave';
-  src: url('./fonts/SedgewickAve.ttf') format('truetype');
+  font-family: 'sedgewickAve-regular';
+  src: url('./fonts/SedgwickAve-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 h1 {
-  font-family: 'sedgewickave';
+  font-family: 'sedgwickave-regular';
 }
 
 code {
