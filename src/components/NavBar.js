@@ -121,7 +121,7 @@ class Navbar extends React.PureComponent {
               <Link to="/collages">Collage</Link>
           </NavLi>
           <NavLi>
-              <Link to="/about" >Login</Link>
+              <Link to="/about" >About</Link>
           </NavLi>
           <NavLi>
             <Link to="/sign-in">Sign In</Link>
