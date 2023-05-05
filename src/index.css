@@ -5,17 +5,48 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 @font-face {
   font-family: 'blowbrush';
-  src: url('./fonts/Blowbrush.ttf') format('truetype');
+  src: url('./fonts/blowbrush.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 h1 {
   font-family: 'blowbrush';
+}
+
+h2 {
+  font-family: 'blowbrush';
+  color: yellow;
+}
+
+h3 {
+  font-family: 'blowbrush';
+  color: yellow;
+}
+
+h4 {
+  font-family: 'blowbrush';
+  color: yellow;
+}
+
+h5 {
+  font-family: 'blowbrush';
+  color: yellow;
+}
+
+h6 {
+  font-family: 'blowbrush';
+  color: yellow;
+}
+
+p {
+  font-family: 'sedgwick-regular';
+  color: white;
 }
 
 code {

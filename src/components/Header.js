@@ -6,11 +6,11 @@ import styled from 'styled-components';
 const ArtistProfileHeader = styled.h1`
   font-size: 50px;
   text-align: center;
-  color: yellow;
-  background-color: black;
+  color: black;
+  background-color: yellow;
 `;
 const StyledWrapper = styled.section`
-  background-color: orange;
+  background-color: yellow;
 `;
 
 function Header(){
@@ -18,7 +18,7 @@ function Header(){
     <StyledWrapper>
       <React.Fragment>
         <ArtistProfileHeader>
-          <h1>DAVID JANDRON</h1>
+          <h1>the DAVID JANDRON gallery</h1>
         </ArtistProfileHeader>
         <ul>
           <li>
