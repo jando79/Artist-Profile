@@ -5,6 +5,10 @@ function ReusableForm(props) {
   return (
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
+        {/* <input
+          type='file'
+          name='image'
+          placeholder='Upload Image' /> */}
         <input
           type='text'
           name='title'

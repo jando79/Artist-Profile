@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 //import artistImage from "./../img/artist.jpg";
 import styled from 'styled-components';
 
@@ -11,13 +11,13 @@ const ArtistProfileHeader = styled.h1`
   -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
 `;
-const StyledWrapper = styled.section`
-  background-color: yellow;
-`;
+// const StyledWrapper = styled.section`
+//   background-color: yellow;
+// `;
 
 function Header(){
   return (
-    <StyledWrapper>
+    //<StyledWrapper>
       <React.Fragment>
         <ArtistProfileHeader>
           <h1>the DAVID JANDRON gallery</h1>
@@ -40,7 +40,7 @@ function Header(){
           </li>
       </ul> */}
       </React.Fragment>
-    </StyledWrapper>
+    //</StyledWrapper>
   );
 }
 
