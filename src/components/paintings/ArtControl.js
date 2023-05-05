@@ -4,7 +4,7 @@ import ArtList from './ArtList';
 import EditArtForm from './EditArtForm';
 import ArtDetail from './ArtDetail';
 import { collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc } from "firebase/firestore";
-import { db, auth } from './../../firebase.js';
+import { db, auth } from '../../firebase.js';
 
 function ArtControl() {
 
