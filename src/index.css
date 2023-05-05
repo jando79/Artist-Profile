@@ -8,10 +8,14 @@ body {
 }
 
 @font-face {
-  font-family: 'searfont';
-  src: url('./fonts/Searfont.ttf') format('truetype');
+  font-family: 'sedwickave';
+  src: url('./fonts/SedgewickAve.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+h1 {
+  font-family: 'sedgewickave';
 }
 
 code {

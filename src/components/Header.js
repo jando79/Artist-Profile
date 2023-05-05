@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 const ArtistProfileHeader = styled.h1`
-  font-size: 24px;
+  font-size: 50px;
   text-align: center;
   color: yellow;
-  background-color: purple;
+  background-color: black;
 `;
 const StyledWrapper = styled.section`
   background-color: orange;
@@ -18,7 +18,7 @@ function Header(){
     <StyledWrapper>
       <React.Fragment>
         <ArtistProfileHeader>
-          <h1>The DAVID JANDRON Gallery</h1>
+          <h1>david jandron</h1>
         </ArtistProfileHeader>
         <ul>
           <li>
