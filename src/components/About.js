@@ -7,7 +7,7 @@ function About () {
   return (
     <React.Fragment>
       <h3>About: </h3>
-      <img src={artistImage} style={{ width: 300, heaight: 250 }} alt="David Jadron, Artist" />
+      <img src={artistImage} style={{ width: 300, height: 250 }} alt="David Jadron, Artist" />
       <p>Hi hi hi hi hi hi</p>
     </React.Fragment>
   );
