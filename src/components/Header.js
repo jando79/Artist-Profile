@@ -20,7 +20,7 @@ function Header(){
     //<StyledWrapper>
       <React.Fragment>
         <ArtistProfileHeader>
-          <h1>the DAVID JANDRON gallery</h1>
+          <h1>the david jandron gallery</h1>
         </ArtistProfileHeader>
         {/* <ul>
           <li>
