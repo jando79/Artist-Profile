@@ -10,6 +10,7 @@ function ArtList(props){
       {props.artList.map((art) =>
         <Art 
           whenArtClicked={props.onArtSelection}
+          img={art.img}
           title={art.title}
           year={art.year}
           medium={art.medium}

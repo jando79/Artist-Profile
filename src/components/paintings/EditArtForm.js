@@ -8,6 +8,7 @@ function EditArtForm (props) {
   function handleEditArtFormSubmission(event) {
     event.preventDefault();
     props.onEditArt({
+      img: event.target.img.value,
       title: event.target.title.value, 
       year: event.target.year.value, 
       medium: event.target.medium.value,

@@ -7,6 +7,7 @@ function NewArtForm(props){
   function handleNewArtFormSubmission(event) {
     event.preventDefault();
     props.onNewArtCreation({
+      img: event.target.img.value,
       title: event.target.title.value, 
       year: event.target.year.value, 
       medium: event.target.medium.value,

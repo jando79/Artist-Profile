@@ -3,13 +3,6 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
-/*
- * This is a ready to use component, just import it and plop it into your project as:
- * <Navbar/>
- * You might want to move all the style components into separate files for readability
- * if you plan to do more with it.
- */
-
 const Bar = styled.nav`
   font-size: 18px;
   background-image: linear-gradient(260deg,  rgb(42,244,152,255) 0%, #3498db 100%); 
@@ -123,9 +116,9 @@ class Navbar extends React.PureComponent {
           <NavLi>
               <Link to="/about" >About</Link>
           </NavLi>
-          <NavLi>
+          {/* <NavLi>
             <Link to="/sign-in">Sign In</Link>
-          </NavLi>
+          </NavLi> */}
       </MainNav>
     </Bar>
   )}

@@ -4,7 +4,7 @@ import ArtList from './ArtList';
 import EditArtForm from './EditArtForm';
 import ArtDetail from './ArtDetail';
 import { collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc } from "firebase/firestore";
-import { db, auth, storage } from '../../firebase.js';
+import { db, auth } from '../../firebase.js';
 
 function ArtControl() {
 
@@ -21,6 +21,7 @@ function ArtControl() {
         const arts = [];
         collectionSnapshot.forEach((doc) => {
             arts.push({
+              img: doc.data().img,
               title: doc.data().title, 
               year: doc.data().year, 
               medium: doc.data().medium,
