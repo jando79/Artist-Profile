@@ -7,8 +7,9 @@ function ArtDetail(props){
   return (
     <React.Fragment>
       <h1>Art Detail</h1>
-      {art.img}
-      <h3>{art.title} - {art.year}</h3>
+      <img src={art.img} />
+      <h2>{art.title}</h2>
+      <h3>{art.year}</h3>
       <p><em>{art.mudium}</em></p>
       <p><em>{art.about}</em></p>
       <p><em>{art.price}</em></p>
