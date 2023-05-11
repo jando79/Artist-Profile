@@ -6,7 +6,7 @@ function Art(props){
   return (
     <React.Fragment>
       <div onClick = {() => props.whenArtClicked(props.id)}>
-        <img src={props.img} />
+        <img src={props.image} alt="painting" />
         <h3><em>{props.title}</em></h3>
         <hr/>
       </div>
@@ -15,7 +15,7 @@ function Art(props){
 }
 
 Art.propTypes = {
-  img: PropTypes.object,
+  image: PropTypes.string,
   title: PropTypes.string,
   year: PropTypes.string,
   medium: PropTypes.string,

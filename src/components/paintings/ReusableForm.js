@@ -6,10 +6,10 @@ function ReusableForm(props) {
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
         <input
-          type='file'
-          name='img'
-          accept=".png, .jpg, jpeg"
-          placeholder='Upload Image' />
+          type='text'
+          name='image'
+          // accept=".png, .jpg, jpeg"
+          placeholder='Painting Url' />
           {/* // onChange={handleImageAsFile}/> */}
         <input
           type='text'
