@@ -14,7 +14,7 @@ This site will introduce viewers to my many works of art. There will also be an 
 * _styled navigation bar_
 * _images stored in database_
 * _clickable images that take viewers to the details (informational text) of the images_
-* _basic CSS/Bootstrap utilization_ 
+* _basic CSS utilization_ 
 
 ### Tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
