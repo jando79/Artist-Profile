@@ -2,11 +2,21 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function ReusableForm(props) {
+  const imgInput = {imgUrl: ''}
+    const [imageAsFile, setImageAsFile] = useState('')
+    const [imageAsUrl, setImageAsUrl] = useState(imgInput)
+
+  console.log(imageAsFile)
+    const handleImageAsFile = (e) => {
+      const image = e.target.files[0]
+      setImageAsFile(imageFile => (image))
+    }
   return (
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
         <input
-          type='text'
+          type='file'
+          onChange={handleImageAsFile}
           name='image'
           // accept=".png, .jpg, jpeg"
           placeholder='Painting Url' />
