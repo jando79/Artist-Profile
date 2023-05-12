@@ -6,6 +6,7 @@ function NewArtForm(props){
 
   function handleNewArtFormSubmission(event) {
     event.preventDefault();
+    
     props.onNewArtCreation({
       image: event.target.image.value,
       title: event.target.title.value, 

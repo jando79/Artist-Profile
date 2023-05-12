@@ -21,7 +21,7 @@ function App(){
         <Route path="/collages" element={<CollageControl />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
