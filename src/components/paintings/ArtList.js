@@ -1,11 +1,18 @@
 import React from "react";
 import Art from "./Art";
 import PropTypes from "prop-types";
+import styled from 'styled-components';
 
+const AboutPaintingText = styled.p `
+  font-size: 20px;
+`
 function ArtList(props){
 
   return (
     <React.Fragment>
+      <AboutPaintingText>
+        <p>All work posted has been completed since March 2021, when David went through a stylistic evolution. The paintings speak to the internal battle between the voices of the flesh and the spirit.</p>
+      </AboutPaintingText>
       <hr/>
       {props.artList.map((art) =>
         <Art 

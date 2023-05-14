@@ -7,12 +7,12 @@ const Bar = styled.nav`
   font-size: 18px;
   background-image: linear-gradient(260deg,  rgb(42,244,152,255) 0%, #3498db 100%); 
   border: 1px solid rgba(0,0,0,0.2);
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
-    height: 70px;
+    height: 40px;
     align-items: center;
   }
 `;
