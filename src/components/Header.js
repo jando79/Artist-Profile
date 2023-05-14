@@ -4,6 +4,7 @@ import React from "react";
 import styled from 'styled-components';
 
 const ArtistProfileHeader = styled.h1`
+  font-family: 'blowbrush';
   font-size: 30px;
   text-align: center;
   color: black;

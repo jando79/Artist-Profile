@@ -8,7 +8,7 @@ function NewArtForm(props){
     event.preventDefault();
     
     props.onNewArtCreation({
-      image: event.target.image.value,
+      imgUrl: event.target.imgUrl.value,
       title: event.target.title.value, 
       year: event.target.year.value, 
       medium: event.target.medium.value,

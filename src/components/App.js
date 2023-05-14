@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 import ArtControl from "./paintings/ArtControl";
 import CollageControl from "./collages/CollageControl";
 import About from "./About";
-import Footer from "./footer/Footer";
+// import Footer from "./footer/Footer";
 import SignIn from "./SignIn";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -21,7 +21,7 @@ function App(){
         <Route path="/collages" element={<CollageControl />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

@@ -21,7 +21,7 @@ function ArtControl() {
         const arts = [];
         collectionSnapshot.forEach((doc) => {
             arts.push({
-              imgage: doc.data().image,
+              imgUrl: doc.data().imgUrl,
               title: doc.data().title, 
               year: doc.data().year, 
               medium: doc.data().medium,
