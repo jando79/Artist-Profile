@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Art(props){
 
-  const imgUrl = <img src={props.imgUrl} style={{ width: 100, height: 100 }} alt="painting" />;
+  const imgUrl = <img src={props.imgUrl} style={{ width: "auto", height: "auto" }} alt="painting" />;
 
   return (
     <React.Fragment>
