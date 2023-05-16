@@ -13,36 +13,20 @@ const ArtistProfileHeader = styled.h1`
     -webkit-text-stroke-color: white;
   padding: 0px;
 `;
-// const StyledWrapper = styled.section`
-//   background-color: yellow;
-// `;
+const StyledWrapper = styled.section`
+  background-image: linear-gradient(260deg,  rgb(42,244,152,255) 0%, #3498db 100%); 
+  border: 1px solid rgba(0,0,0,0.2);
+`;
 
 function Header(){
   return (
-    //<StyledWrapper>
+    <StyledWrapper>
       <React.Fragment>
         <ArtistProfileHeader>
           <h1>the david jandron gallery</h1>
         </ArtistProfileHeader>
-        {/* <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/paintings">Paintings</Link>
-          </li>
-          <li>
-            <Link to="/collages">Collage</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/sign-in">Sign In</Link>
-          </li>
-      </ul> */}
       </React.Fragment>
-    //</StyledWrapper>
+    </StyledWrapper>
   );
 }
 

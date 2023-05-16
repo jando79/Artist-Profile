@@ -7,10 +7,10 @@ function ArtDetail(props){
   return (
     <React.Fragment>
       <h2>Art Detail</h2>
-      <img src={art.imgUrl} alt="painting" />
+      <img src={art.imgUrl} style={{ float: "left", height: "60%", width: "60%" }} alt="painting" />
       <h2>{art.title}</h2>
       <h3>{art.year}</h3>
-      <p><em>{art.mudium}</em></p>
+      <p><em>{art.medium}</em></p>
       <p><em>{art.about}</em></p>
       <p><em>{art.price}</em></p>
       <button onClick={onClickingEdit}>Update Listing</button>
