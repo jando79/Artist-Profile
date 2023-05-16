@@ -6,7 +6,7 @@ function CollageDetail(props){
 
   return (
     <React.Fragment>
-      <img src={collage.imgUrl} style={{ float: "left", height: "35%", width: "35%", paddingRight: 50 }} alt="collage" />
+      <img src={collage.imgUrl} style={{ float: "left", height: "20%", width: "20%", paddingRight: 50 }} alt="collage" />
       <h2>{collage.title}</h2> 
       <h3>{collage.year}</h3>
       <p><em>{collage.about}</em></p>
