@@ -15,7 +15,7 @@ function CollageDetail(props){
       <button onClick={()=> onClickingDelete(collage.id)}>Delete Listing</button>
       <hr/>
     </React.Fragment>
-  );
+  )
 }
 
 CollageDetail.propTypes = {
