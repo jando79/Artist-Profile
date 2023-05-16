@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 
 function Art(props){
 
-  // const imgUrl = <img src={props.imgUrl} style={{ width: "auto", height: "auto" }} alt="painting" />;
-
   return (
     <React.Fragment>
       <div onClick = {() => props.whenArtClicked(props.id)}>

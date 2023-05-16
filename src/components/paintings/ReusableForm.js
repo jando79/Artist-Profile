@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function ReusableForm(props) {
 
   return (
-    <React.Fragment>
+    <React.Fragment>      
       <br></br>
       <form onSubmit={props.formSubmissionHandler}>
         <input
@@ -34,7 +34,7 @@ function ReusableForm(props) {
         <textarea
           name='about'
           placeholder='About' 
-          style={{ width: 500, height: 300 }} />
+          style={{ width: 600, height: 300 }} />
           <br></br>
           <br></br>
         <input
