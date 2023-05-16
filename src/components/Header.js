@@ -8,9 +8,9 @@ const ArtistProfileHeader = styled.h1`
   font-size: 30px;
   text-align: center;
   color: black;
-  background-color: yellow;
+  background-color: black;
   -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: yellow;
   padding: 0px;
 `;
 const StyledWrapper = styled.section`

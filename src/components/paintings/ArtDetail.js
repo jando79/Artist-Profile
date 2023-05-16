@@ -7,7 +7,7 @@ function ArtDetail(props){
   return (
     <React.Fragment>
       <h2>Art Detail</h2>
-      <img src={art.imgUrl} style={{ float: "left", height: "60%", width: "60%" }} alt="painting" />
+      <img src={art.imgUrl} style={{ float: "left", height: "35%", width: "35%", paddingRight: 50 }} alt="painting" />
       <h2>{art.title}</h2>
       <h3>{art.year}</h3>
       <p><em>{art.medium}</em></p>

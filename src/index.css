@@ -15,6 +15,13 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SedgwickAve-Regular';
+  src: url('./fonts/SedgwickAve-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h2 {
   font-family: 'blowbrush';
   color: yellow;
@@ -41,11 +48,7 @@ h6 {
 }
 
 p {
-  font-family: 'sedgwick-regular';
+  font-family: 'SedgwickAve-Regular';
   color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

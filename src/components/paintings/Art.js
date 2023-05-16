@@ -8,7 +8,7 @@ function Art(props){
   return (
     <React.Fragment>
       <div onClick = {() => props.whenArtClicked(props.id)}>
-        {imgUrl}
+        <center>{imgUrl}</center>
         {/* <img src={props.image} alt="painting" /> */}
         {/* <img src={props.imgUrl} style={{ width: 100, height: 100 }} alt="painting" /> */}
         {/* <h3>{props.title}</h3> */}

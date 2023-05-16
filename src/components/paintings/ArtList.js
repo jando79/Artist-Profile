@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import styled from 'styled-components';
 
 const AboutPaintingText = styled.p `
-  font-size: 20px;
+  font-size: 15px;
 `
 function ArtList(props){
 
