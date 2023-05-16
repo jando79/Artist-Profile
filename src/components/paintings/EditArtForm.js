@@ -15,7 +15,7 @@ function EditArtForm (props) {
       about: event.target.about.value,
       price: event.target.price.value, 
       id: art.id
-    });
+    })
   }
 
   return (
