@@ -7,9 +7,9 @@ function NewCollageForm(props){
   function handleNewCollageFormSubmission(event) {
     event.preventDefault();
     props.onNewCollageCreation({
+      imgUrl: event.target.imgUrl.value,
       title: event.target.title.value, 
       year: event.target.year.value, 
-      // medium: event.target.medium.value,
       about: event.target.about.value,
       price: event.target.price.value,
     });

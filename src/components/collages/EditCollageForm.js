@@ -8,9 +8,9 @@ function EditCollageForm (props) {
   function handleEditCollageFormSubmission(event) {
     event.preventDefault();
     props.onEditCollage({
+      imgUrl: event.target.imgUrl.value,
       title: event.target.title.value, 
       year: event.target.year.value, 
-      // medium: event.target.medium.value,
       about: event.target.about.value,
       price: event.target.price.value, 
       id: collage.id

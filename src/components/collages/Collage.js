@@ -6,8 +6,7 @@ function Collage(props){
   return (
     <React.Fragment>
       <div onClick = {() => props.whenCollageClicked(props.id)}>
-        {/* This is where the image to click on go */}
-        <p><em>{props.title}</em></p>
+        <center><img src={props.imgUrl} style={{ width: "auto", height: "auto" }} alt="collage" /></center>;
         <hr/>
       </div>
     </React.Fragment>
@@ -15,10 +14,9 @@ function Collage(props){
 }
 
 Collage.propTypes = {
-  // image
+  imgUrl: PropTypes.string,
   title: PropTypes.string,
   year: PropTypes.string,
-  // medium: PropTypes.string,
   about: PropTypes.string,
   price: PropTypes.string,
   id: PropTypes.string,

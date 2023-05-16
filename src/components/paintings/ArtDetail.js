@@ -6,13 +6,13 @@ function ArtDetail(props){
 
   return (
     <React.Fragment>
-      <h2>Art Detail</h2>
+      <br></br>
       <img src={art.imgUrl} style={{ float: "left", height: "35%", width: "35%", paddingRight: 50 }} alt="painting" />
       <h2>{art.title}</h2>
       <h3>{art.year}</h3>
       <p><em>{art.medium}</em></p>
       <p><em>{art.about}</em></p>
-      <p><em>{art.price}</em></p>
+      <p><em>$ {art.price}</em></p>
       <button onClick={onClickingEdit}>Update Listing</button>
       <button onClick={()=> onClickingDelete(art.id)}>Delete Listing</button>
       <hr/>

@@ -6,11 +6,11 @@ function CollageDetail(props){
 
   return (
     <React.Fragment>
-      <h1>Collage Detail</h1>
-      <h3>{collage.title} - {collage.year}</h3>
-      {/* <p><em>{art.mudium}</em></p> */}
+      <img src={collage.imgUrl} style={{ float: "left", height: "35%", width: "35%", paddingRight: 50 }} alt="collage" />
+      <h2>{collage.title}</h2> 
+      <h3>{collage.year}</h3>
       <p><em>{collage.about}</em></p>
-      <p><em>{collage.price}</em></p>
+      <p><em>$ {collage.price}</em></p>
       <button onClick={onClickingEdit}>Update Listing</button>
       <button onClick={()=> onClickingDelete(collage.id)}>Delete Listing</button>
       <hr/>

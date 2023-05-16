@@ -21,9 +21,9 @@ function CollageControl() {
         const collages = [];
         collectionSnapshot.forEach((doc) => {
             collages.push({
+              imgUrl: doc.data().imgUrl,
               title: doc.data().title, 
               year: doc.data().year, 
-              // medium: doc.data().medium,
               about: doc.data().about,
               price: doc.data().price, 
               id: doc.id

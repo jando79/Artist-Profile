@@ -10,9 +10,9 @@ function CollageList(props){
       {props.collageList.map((collage) =>
         <Collage 
           whenCollageClicked={props.onCollageSelection}
+          imgUrl={collage.imgUrl}
           title={collage.title}
           year={collage.year}
-          // medium={art.medium}
           about={collage.about}
           price={collage.price}
           id={collage.id}

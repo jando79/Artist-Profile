@@ -5,32 +5,47 @@ function ReusableForm(props) {
 
   return (
     <React.Fragment>
+      <br></br>
       <form onSubmit={props.formSubmissionHandler}>
         <input
           type='text'
           name='imgUrl'
-          // accept=".png, .jpg, jpeg"
           placeholder='Painting Url' />
+          <br></br>
+          <br></br>
         <input
           type='text'
           name='title'
           placeholder='Title' />
+          <br></br>
+          <br></br>
         <input
           type='text'
           name='year'
           placeholder='Year' />
+          <br></br>
+          <br></br> 
         <textarea
           name='medium'
-          placeholder='Medium' />
+          placeholder='Medium'
+          style={{ width: 300, height: 20 }} />
+          <br></br>
+          <br></br>
         <textarea
           name='about'
-          placeholder='About' />
+          placeholder='About' 
+          style={{ width: 500, height: 300 }} />
+          <br></br>
+          <br></br>
         <input
           type='text'
           name='price'
-          placeholder='Price' />
+          placeholder='$ price' />
+          <br></br>
+          <br></br>
         <button type='submit'>{props.buttonText}</button>
       </form>
+      <br></br>
     </React.Fragment>
   );
 }

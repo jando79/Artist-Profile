@@ -3,15 +3,12 @@ import PropTypes from "prop-types";
 
 function Art(props){
 
-  const imgUrl = <img src={props.imgUrl} style={{ width: "auto", height: "auto" }} alt="painting" />;
+  // const imgUrl = <img src={props.imgUrl} style={{ width: "auto", height: "auto" }} alt="painting" />;
 
   return (
     <React.Fragment>
       <div onClick = {() => props.whenArtClicked(props.id)}>
-        <center>{imgUrl}</center>
-        {/* <img src={props.image} alt="painting" /> */}
-        {/* <img src={props.imgUrl} style={{ width: 100, height: 100 }} alt="painting" /> */}
-        {/* <h3>{props.title}</h3> */}
+        <center><img src={props.imgUrl} style={{ width: "auto", height: "auto" }} alt="painting" /></center>;
         <hr/>
       </div>
     </React.Fragment>
@@ -24,7 +21,7 @@ Art.propTypes = {
   year: PropTypes.string,
   medium: PropTypes.string,
   about: PropTypes.string,
-  price: PropTypes.string,
+  price: PropTypes.number,
   id: PropTypes.string,
   whenArtClicked: PropTypes.func
 }
