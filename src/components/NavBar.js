@@ -28,16 +28,16 @@ const Bar = styled.nav`
 //   }
 // `;
 const NavLi = styled.li`
+  text-decoration: none;
   text-align: center;
   margin: 15px auto;
   display: flex;
   flex-direction: column;
-  text-decoration: none;
   text-align: center;
   color: black;
   font-family: blowbrush;
-
 `;
+
 // const Logo  = NavLink.extend`
 //   display: inline-block;
 //   font-size: 22px;
@@ -93,6 +93,7 @@ class Navbar extends React.PureComponent {
             <Link to="/sign-in">Sign In</Link>
           </li>
       </ul> */}
+      {/* </MainNav> */}
             <NavLi>
               <Link to="/">Home</Link>
             </NavLi>
