@@ -10,7 +10,7 @@ function Collage(props){
         <hr/>
       </div>
     </React.Fragment>
-  )
+  );
 }
 
 Collage.propTypes = {
@@ -18,7 +18,7 @@ Collage.propTypes = {
   title: PropTypes.string,
   year: PropTypes.string,
   about: PropTypes.string,
-  price: PropTypes.string,
+  price: PropTypes.number,
   id: PropTypes.string,
   whenArtClicked: PropTypes.func
 }
