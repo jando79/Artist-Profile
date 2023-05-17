@@ -80,6 +80,14 @@ function ArtControl() {
     return (
       <React.Fragment>
         <h1>You must be signed in to incoporate changes to this site</h1>
+        {/* currentlyVisibleState = 
+        <ArtList 
+          onArtSelection={handleChangingSelectedArt} 
+          artList={mainArtList} />;
+        currentlyVisibleState =
+        <ArtDetail 
+          art={selectedArt} />;
+        buttonText = "Return to Listings"; */}
       </React.Fragment>
     )
   } else if (auth.currentUser != null) {
