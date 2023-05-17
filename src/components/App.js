@@ -8,6 +8,7 @@ import About from "./About";
 // import Footer from "./footer/Footer";
 import SignIn from "./SignIn";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 function App(){
   return (
