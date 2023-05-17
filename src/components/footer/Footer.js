@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import {
   Box,
   Container,
   Row,
   Column,
-  FooterLink,
-  Heading,
+  Link,
+  // Heading,
 } from "./FooterStyles";
   
 const Footer = () => {
@@ -21,54 +21,53 @@ const Footer = () => {
         <Row>
           <Column>
             {/* <Heading>About Us</Heading> */}
-            <Link to="/sign-in">Admin</Link>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
+            <Link to="/sign-in">Admin Login</Link>
           </Column>
-          <Column>
+          {/* <Column>
             {/* <Heading>Services</Heading> */}
-            <FooterLink href="#">Writing</FooterLink>
+            {/* <FooterLink href="#">Writing</FooterLink>
             <FooterLink href="#">Internships</FooterLink>
             <FooterLink href="#">Coding</FooterLink>
             <FooterLink href="#">Teaching</FooterLink>
-          </Column>
+          </Column> */}
           <Column>
             {/* <Heading>Contact Us</Heading> */}
-            <FooterLink href="#">Uttar Pradesh</FooterLink>
+            <Link href="djandronart@gmail.com">Email the Artist</Link>
+            {/* <FooterLink href="#">Uttar Pradesh</FooterLink>
             <FooterLink href="#">Ahemdabad</FooterLink>
             <FooterLink href="#">Indore</FooterLink>
-            <FooterLink href="#">Mumbai</FooterLink>
+            <FooterLink href="#">Mumbai</FooterLink> */}
           </Column>
           <Column>
             {/* <Heading>Social Media</Heading> */}
-            <FooterLink href="#">
+            {/* <Link href="#">
               <i className="fab fa-facebook-f">
                 <span style={{ marginLeft: "10px" }}>
                   Facebook
                 </span>
               </i>
-            </FooterLink>
-            <FooterLink href="#">
+            </Link> */}
+            <Link href="https://www.instagram.com/recogoods/">
               <i className="fab fa-instagram">
                 <span style={{ marginLeft: "10px" }}>
                   Instagram
                 </span>
               </i>
-            </FooterLink>
-            <FooterLink href="#">
+            </Link>
+            {/* <Link href="#">
               <i className="fab fa-twitter">
                 <span style={{ marginLeft: "10px" }}>
                   Twitter
                 </span>
               </i>
-            </FooterLink>
-            <FooterLink href="#">
+            </Link>
+            <Link href="#">
               <i className="fab fa-youtube">
                 <span style={{ marginLeft: "10px" }}>
                   Youtube
                 </span>
               </i>
-            </FooterLink>
+            </Link> */}
           </Column>
         </Row>
       </Container>

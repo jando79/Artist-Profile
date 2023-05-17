@@ -16,30 +16,27 @@ const Bar = styled.nav`
     align-items: center;
   }
 `;
-const MainNav = styled.ul`
-  list-style-type: none;
-  display: ${ props => props.display };
-  flex-direction: column;
-  @media (min-width: 768px) {
-    display: flex !important;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-`;
+// const MainNav = styled.ul`
+//   list-style-type: none;
+//   display: ${ props => props.display };
+//   flex-direction: column;
+//   @media (min-width: 768px) {
+//     display: flex !important;
+//     margin-right: 30px;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//   }
+// `;
 const NavLi = styled.li`
   text-align: center;
   margin: 15px auto;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
   text-decoration: none;
   text-align: center;
   color: black;
   font-family: blowbrush;
-  @media (min-width: 768px) {    
-  margin: 0px 10px;
-  }
+
 `;
 // const Logo  = NavLink.extend`
 //   display: inline-block;
@@ -78,7 +75,7 @@ class Navbar extends React.PureComponent {
         {/* <Home /> */}
       </NavBarToggle>
       {/* <Logo href="#">logo</Logo> */}
-      <MainNav display={this.state.displayNav}>
+      {/* <MainNav display={this.state.displayNav}> */}
       {/* <ul>
           <li>
             <Link to="/">Home</Link>
@@ -96,22 +93,22 @@ class Navbar extends React.PureComponent {
             <Link to="/sign-in">Sign In</Link>
           </li>
       </ul> */}
-          <NavLi>
+            <NavLi>
               <Link to="/">Home</Link>
-          </NavLi>
-          <NavLi>
+            </NavLi>
+            <NavLi>
               <Link to="/paintings">Paintings</Link>
-          </NavLi>
-          <NavLi>
+              {/* <span style={{ marginLeft: "10px" }}></span> */}
+            </NavLi>
+            <NavLi>
               <Link to="/collages">Collage</Link>
-          </NavLi>
-          <NavLi>
+              <span style={{ marginLeft: "10px" }}></span>
+            </NavLi>
+            <NavLi>
               <Link to="/about" >About</Link>
           </NavLi>
-          {/* <NavLi>
-            <Link to="/sign-in">Sign In</Link>
-          </NavLi> */}
-      </MainNav>
+     
+      {/* </MainNav> */}
     </Bar>
   )}
 }

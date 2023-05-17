@@ -12,6 +12,11 @@ const ArtistProfileHeader = styled.h1`
   -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: yellow;
   padding: 0px;
+  
+  &:hover {
+    color: white;
+    transition: 200ms ease-in;
+}
 `;
 const StyledWrapper = styled.section`
   background-image: linear-gradient(260deg,  rgb(42,244,152,255) 0%, #3498db 100%); 

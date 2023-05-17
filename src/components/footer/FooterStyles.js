@@ -2,8 +2,8 @@ import styled from 'styled-components';
    
 export const Box = styled.div`
   padding: 10px 10px;
-  background: black;
-  position: absolute;
+  background-image: linear-gradient(260deg,  rgb(42,244,152,255) 0%, #3498db 100%); 
+  border: 5px solid yellow;
   bottom: 0;
   width: 100%;
   
@@ -41,17 +41,19 @@ export const Row = styled.div`
   }
 `;
    
-export const FooterLink = styled.a`
-  color: #fff;
+export const Link = styled.a`
+  color: black;
+  font-family: 'blowbrush';
   margin-bottom: 3px;
-  font-size: 10px;
+  font-size: 15px;
   text-decoration: none;
    
   &:hover {
-      color: green;
+      color: white;
       transition: 200ms ease-in;
   }
 `;
+
    
 export const Heading = styled.p`
   font-size: 24px;
