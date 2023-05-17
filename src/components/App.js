@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "./Header";
 import Home from "./Home";
-import NavBar from "./NavBar";
+import NavBar from "./navbar/NavBar";
 import ArtControl from "./paintings/ArtControl";
 import CollageControl from "./collages/CollageControl";
 import About from "./About";
 import Footer from "./footer/Footer";
 import SignIn from "./SignIn";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
