@@ -1,6 +1,4 @@
 import React from "react";
-//import { Link } from "react-router-dom";
-//import artistImage from "./../img/artist.jpg";
 import styled from 'styled-components';
 
 const ArtistProfileHeader = styled.h1`
@@ -14,12 +12,12 @@ const ArtistProfileHeader = styled.h1`
   padding: 0px;
   
   &:hover {
-    color: white;
+    color: rgb(42,244,152,255);
     transition: 200ms ease-in;
 }
 `;
 const StyledWrapper = styled.section`
-  background-image: linear-gradient(260deg,  rgb(42,244,152,255) 0%, #3498db 100%); 
+  background-image: linear-gradient(260deg, rgb(42,244,152,255) 0%, #3498db 100%); 
   border: 1px solid rgba(0,0,0,0.2);
 `;
 
