@@ -9,13 +9,13 @@ const ArtistProfileHeader = styled.h1`
   background-color: black;
   -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: yellow;
-  padding: 0px;
-  
+  padding: 0px; 
   &:hover {
     color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(42,244,152,255);
     transition: 200ms ease-in;
+    background-color: yellow;
 }
 `;
 const StyledWrapper = styled.section`
