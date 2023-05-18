@@ -6,6 +6,7 @@ import homeImage3 from "./../img/collageHome.jpg";
 function Home() {
   return (
     <React.Fragment>
+      <br></br>
       <img src={homeImage3} style={{ height: 350, width: 325, float: "left", paddingRight: 12 }} alt="Collage" />
       <img src={homeImage2} style={{ height: 350, width: 500, float: "right", paddingLeft: 2 }} alt="Bright Painting" />
       <img src={homeImage1} style={{ height: 350, width: 500 }} alt="Black And White" />
