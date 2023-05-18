@@ -19,7 +19,7 @@ function Art(props){
       <ArtDiv>
       <div onClick = {() => props.whenArtClicked(props.id)}>
         <IDive>
-        <center><img src={props.imgUrl} style={{ width: "35%", height: "35%" }} alt="painting" /></center>;
+          <center><img src={props.imgUrl} style={{ width: "35%", height: "35%" }} alt="painting" /></center>;
         </IDive>
       </div>
       <hr/>

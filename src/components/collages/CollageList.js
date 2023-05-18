@@ -6,6 +6,7 @@ function CollageList(props){
 
   return (
     <React.Fragment>
+      <br></br>
       {props.collageList.map((collage) =>
         <Collage 
           whenCollageClicked={props.onCollageSelection}
