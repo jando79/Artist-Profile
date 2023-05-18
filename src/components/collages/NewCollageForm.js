@@ -1,6 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types"; 
 import ReusableForm from "./ReusableForm";
+import styled from 'styled-components'; 
+
+const FormDiv = styled.div `
+  margin: 20px;
+`
 
 function NewCollageForm(props){
 
@@ -17,9 +22,11 @@ function NewCollageForm(props){
 
   return (
     <React.Fragment>
-      <ReusableForm 
-        formSubmissionHandler={handleNewCollageFormSubmission}
-        buttonText="Submit" />
+      <FormDiv>
+        <ReusableForm 
+          formSubmissionHandler={handleNewCollageFormSubmission}
+          buttonText="Submit" />
+      </FormDiv>
     </React.Fragment>
   );
 }

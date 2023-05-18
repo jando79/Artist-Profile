@@ -4,6 +4,7 @@ import styled from 'styled-components';
  
 export const Border = styled.div`
   border: 5px solid yellow;
+  padding-bottom: 0;
 
 `
 

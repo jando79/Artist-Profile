@@ -12,7 +12,9 @@ const ArtistProfileHeader = styled.h1`
   padding: 0px;
   
   &:hover {
-    color: rgb(42,244,152,255);
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(42,244,152,255);
     transition: 200ms ease-in;
 }
 `;
