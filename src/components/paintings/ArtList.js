@@ -6,7 +6,7 @@ function ArtList(props){
 
   return (
     <React.Fragment>
-      <hr/>
+      <br></br>
       {props.artList.map((art) =>
         <Art 
           whenArtClicked={props.onArtSelection}

@@ -5,6 +5,7 @@ import {
   FootLink,
   FootMenu,
 } from './FooterStyles';
+import { FaInstagram } from "react-icons/fa";
   
 const Footer = () => {
   return (
@@ -15,13 +16,11 @@ const Footer = () => {
             <FootLink to='/sign-in' activeStyle>
               Admin
             </FootLink>
-            {/* <FootLink to='/paintings' activeStyle>
-              Paintings
+            <FootLink mailto='djandronart@gmail.com' activeStyle>
+              Contact
             </FootLink>
-            <FootLink activeStyle>
-              Collage
-            </FootLink> */}
             <FootLink to='https://www.instagram.com/recogoods/' activeStyle>
+              <FaInstagram />
               Instagram
             </FootLink>
           </FootMenu>
