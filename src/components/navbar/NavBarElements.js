@@ -37,7 +37,5 @@ display: grid;
   
 export const NavMenu = styled.div`
   display: flex;
-
-  
   }
 `;

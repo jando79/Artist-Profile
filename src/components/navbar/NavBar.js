@@ -3,11 +3,9 @@ import {
   Border,
   Nav,
   NavLink,
-  // Bars,
   NavMenu,
-  // NavBtn,
-  // NavBtnLink,
 } from './NavBarElements';
+import { BiSprayCan, BiCut, BiHomeHeart, BiUser } from "react-icons/bi";
   
 const Navbar = () => {
   return (
@@ -18,15 +16,19 @@ const Navbar = () => {
     
           <NavMenu>
             <NavLink to='/' activeStyle>
+              <BiHomeHeart />
               Home
             </NavLink>
             <NavLink to='/paintings' activeStyle>
+              <BiSprayCan />
               Paintings
             </NavLink>
             <NavLink to='/collages' activeStyle>
+              <BiCut />
               Collage
             </NavLink>
             <NavLink to='/about' activeStyle>
+              <BiUser />
               About
             </NavLink>
           </NavMenu>
