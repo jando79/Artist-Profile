@@ -13,7 +13,7 @@ function SignIn(){
     const password = event.target.signinPassword.value;
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        setSignInSuccess(`You've successfully signed in as ${userCredential.user.email}!`)
+        setSignInSuccess(<p>`You've successfully signed in as {userCredential.user.email}!`</p>)
       })
       .catch((error) => {
         setSignInSuccess(`There was an error signing in: ${error.message}!`)
@@ -23,7 +23,7 @@ function SignIn(){
   function doSignOut() {
     signOut(auth)
       .then(function() {
-        setSignOutSuccess("You have successfully signed out!");
+        setSignOutSuccess(<p>"You have successfully signed out!"</p>);
       }).catch(function(error) {
         setSignOutSuccess(`There was an error signing out: ${error.message}!`);
       });

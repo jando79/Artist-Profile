@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from 'styled-components';
+import { auth } from '../../firebase.js';
 
 const DetailStyle = styled.div `
   float: right;
@@ -9,26 +10,27 @@ const DetailStyle = styled.div `
 `
 
 function ArtDetail(props){
-  const { art, onClickingDelete, onClickingEdit } = props;
 
-  return (
-    <React.Fragment>
+  const { art, onClickingDelete, onClickingEdit } = props;
+    return (
       <DetailStyle>
         <br></br>
         <img src={art.imgUrl} style={{ float: "left", height: "25%", width: "25%", paddingRight: 50 }} alt="painting" />
         <h2>{art.title}</h2>
-        <h3>{art.year}</h3>
-        <p><em>{art.medium}</em></p>
-        <p><em>{art.about}</em></p>
-        <p><em>$ {art.price}</em></p>
-        <br></br>
-        <button onClick={onClickingEdit}>Update Listing</button>
-        <button onClick={()=> onClickingDelete(art.id)}>Delete Listing</button>
-        <hr />
+        <p>{art.year}</p>
+        <p>{art.medium}</p>
+        <p>{art.about}</p>
+        <p>{art.price}</p>
+        {auth.currentUser && (
+          <React.Fragment>
+            <button onClick={() => onClickingEdit(art)}>Edit</button>
+            <button onClick={() => onClickingDelete(art.id)}>Delete</button>
+          </React.Fragment>
+        )}
       </DetailStyle>
-    </React.Fragment>
-  );
-}
+    );
+  };
+  
 
 ArtDetail.propTypes = {
   art: PropTypes.object,
