@@ -31,7 +31,7 @@ This application features my various artworks. It utilizes firebase storage, as 
 
 ### Known Bugs
 
-* Not currently set to Read only
+* N/A
 
 ### License
 
