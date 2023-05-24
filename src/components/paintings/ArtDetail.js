@@ -20,7 +20,7 @@ function ArtDetail(props){
         <p>{art.year}</p>
         <p>{art.medium}</p>
         <p>{art.about}</p>
-        <p>{art.price}</p>
+        <p>$ {art.price}</p>
         {auth.currentUser && (
           <React.Fragment>
             <button onClick={() => onClickingEdit(art)}>Edit</button>

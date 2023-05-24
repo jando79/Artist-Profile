@@ -19,7 +19,7 @@ function CollageDetail(props){
         <h2>{collage.title}</h2>
         <p>{collage.year}</p>
         <p>{collage.about}</p>
-        <p>{collage.price}</p>
+        <p>$ {collage.price}</p>
         {auth.currentUser && (
           <React.Fragment>
             <button onClick={() => onClickingEdit(collage)}>Edit</button>
